@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - ITATS</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: linear-gradient(120deg, #f5f3ff, #fefce8);
+    }
+  </style>
+</head>
+<body class="flex flex-col min-h-screen font-sans">
+
+  <!-- Header -->
+  <header class="flex items-center justify-between px-8 py-6">
+    <div>
+      <img src="img/logoitats.png" alt="Logo ITATS" class="h-[90px]" />
+      
+    </div>
+    <nav>
+      <ul class="flex items-center gap-4">
+        
+        <li>
+          <a href="#" class="bg-white border border-black text-black font-semibold py-2 px-4 rounded-lg shadow hover:bg-purple-50">
+            LOGIN
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main class="flex-1 flex flex-col items-center justify-center px-4">
+    <div class="text-center mb-6">
+      <h1 class="text-3xl font-bold">LOGIN</h1>
+      <p class="text-sm text-gray-600 mt-1">Ijinkan Sistem Mengenali Anda.</p>
+    </div>
+
+    <form class="bg-white shadow-lg rounded-xl p-8 w-full max-w-md space-y-6">
+      <div>
+        <input type="text" placeholder="NPM/NIP/Email" class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" />
+      </div>
+      <div>
+        <input type="password" placeholder="Password" class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" />
+      </div>
+      <div class="text-right">
+        <button  onclick="window.location.href = 'dasboard.html';" type="submit" class="bg-black hover:bg-gray-900 text-white px-6 py-2 rounded-lg font-semibold">
+          <a href="dasboard.html">Login</a>
+        </button>
+      </div>
+    </form>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white mt-12 p-10">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-sm">
+      <div>
+        <h3 class="font-bold mb-2">F. Teknologi Industri</h3>
+        <ul class="space-y-1">
+          <li>Teknik Mesin</li>
+          <li>Teknik Industri</li>
+          <li>Teknik Kimia</li>
+          <li>Teknik Pertambangan</li>
+          <li>Teknik Perkapalan</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-bold mb-2">F. Teknik Sipil & Perencanaan</h3>
+        <ul class="space-y-1">
+          <li>Teknik Sipil</li>
+          <li>Arsitektur</li>
+          <li>Teknik Lingkungan</li>
+          <li>Desain Produk</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-bold mb-2">F. Teknik Elektro & Teknologi Informasi</h3>
+        <ul class="space-y-1">
+          <li>Teknik Elektro</li>
+          <li>Teknik Informatika</li>
+          <li>Sistem Informasi</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-bold mb-2">Program Pascasarjana</h3>
+        <ul class="space-y-1">
+          <li>Magister Teknik Industri</li>
+          <li>Magister Teknik Lingkungan</li>
+        </ul>
+      </div>
+    </div>
+    <div class="text-center mt-8 text-xs">
+      © 2023 ITATS All rights reserved | Developed By <strong>PSI ITATS</strong>
+    </div>
+  </footer>
+</body>
+</html>
