@@ -4,239 +4,300 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Presensi</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"  rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="bg-gray-100 font-sans">
   <!-- Header -->
-  <header class="bg-white shadow-md p-4 flex items-center justify-between">
-    <div class="flex items-center gap-4">
-  <button class="bg-black text-white px-6 py-2 rounded-lg font-semibold transition duration-300 ease-in-out hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-500">
-    <a href="dasboard.html" class="block">Keluar</a>
-  </button>
-  <span class="text-2xl  ">Classroom ITATS</span>
-</div>
+  <header class="bg-white shadow-md p-4 flex flex-col sm:flex-row items-center justify-between">
+    <div class="flex items-center gap-4 mb-2 sm:mb-0">
+      <button class="bg-black text-white px-4 sm:px-6 py-2 rounded-lg font-semibold transition duration-300 ease-in-out hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-500">
+        <a href="dasboard.html" class="block">Keluar</a>
+      </button>
+      <span class="text-xl sm:text-2xl">Classroom ITATS</span>
+    </div>
     <nav class="space-x-4">
     </nav>
   </header>
 
   <!-- Main Content -->
-  <main class="container mx-auto p-4">
+  <main class="container mx-auto p-2 sm:p-4">
     <!-- Title -->
-    <h1 class="text-2xl font-bold text-blue-500 mb-4 border-b pb-2">Presensi</h1>
+    <h1 class="text-xl sm:text-2xl font-bold text-blue-500 mb-4 border-b pb-2">Presensi</h1>
 
     <!-- Presensi List -->
     <div class="space-y-4">
-      <!-- Item 1 -->
-      <div class="flex justify-between items-start mb-4">
-        <div>
-          <p class="text-lg font-bold">Minggu Ke - 1</p>
-          <p class="text-gray-600"><strong>自</strong> 11 Juli 2025 23:00:00 [R]</p>
-          <p class="text-gray-600">11 Juli 2025 23:00:00 [M]</p>
-        </div>
-        <div>
-          <p class="text-sm text-gray-600">2025-07-11 23:00:00</p>
-          <button class="bg-green-700 text-white px-2 py-1 rounded mt-2">Presensi [R]</button>
-          <button class="bg-green-700 text-white px-2 py-1 rounded mt-2">Presensi [M]</button>
+      <!-- Item Template - Repeat for each week -->
+      <div class="bg-white p-3 rounded-lg shadow">
+        <div class="flex flex-col sm:flex-row justify-between">
+          <div class="mb-2 sm:mb-0">
+            <p class="text-lg font-bold">Minggu Ke - 1</p>
+            <p class="text-sm text-gray-600"><strong>自</strong> 11 Juli 2025 23:00:00 [R]</p>
+            <p class="text-sm text-gray-600">11 Juli 2025 23:00:00 [M]</p>
+          </div>
+          <div class="flex flex-col items-end">
+            <p class="text-xs sm:text-sm text-gray-600 mb-1">2025-07-11 23:00:00</p>
+            <div class="flex gap-1">
+              <button class="bg-green-700 text-white text-xs sm:text-sm px-2 py-1 rounded">Responsi [R]</button>
+              <button class="bg-green-700 text-white text-xs sm:text-sm px-2 py-1 rounded">Materi [M]</button>
+            </div>
+          </div>
         </div>
       </div>
 
       <!-- Item 2 -->
-      <div class="flex justify-between items-start mb-4 ">
-        <div>
-          <p class="text-lg font-bold">Minggu Ke - 2</p>
-          <p class="text-gray-600"><strong>自</strong> 11 Juli 2025 23:00:00 [R]</p>
-          <p class="text-gray-600">11 Juli 2025 23:00:00 [M]</p>
-        </div>
-        <div>
-          <p class="text-sm text-gray-600">2025-07-11 23:00:00</p>
-          <button class="bg-red-700 text-white px-2 py-1 rounded mt-2">Presensi [R]</button>
-          <button class="bg-green-700 text-white px-2 py-1 rounded mt-2">Presensi [M]</button>
+      <div class="bg-white p-3 rounded-lg shadow">
+        <div class="flex flex-col sm:flex-row justify-between">
+          <div class="mb-2 sm:mb-0">
+            <p class="text-lg font-bold">Minggu Ke - 2</p>
+            <p class="text-sm text-gray-600"><strong>自</strong> 11 Juli 2025 23:00:00 [R]</p>
+            <p class="text-sm text-gray-600">11 Juli 2025 23:00:00 [M]</p>
+          </div>
+          <div class="flex flex-col items-end">
+            <p class="text-xs sm:text-sm text-gray-600 mb-1">2025-07-11 23:00:00</p>
+            <div class="flex gap-1">
+              <button class="bg-red-700 text-white text-xs sm:text-sm px-2 py-1 rounded">Responsi [R]</button>
+              <button class="bg-green-700 text-white text-xs sm:text-sm px-2 py-1 rounded"> Materi [M]</button>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- Item 3 -->
-      <div class="flex justify-between items-start mb-4">
-        <div>
-          <p class="text-lg font-bold">Minggu Ke - 3</p>
-          <p class="text-gray-600"><strong>自</strong> 11 Juli 2025 23:00:00 [R]</p>
-          <p class="text-gray-600">11 Juli 2025 23:00:00 [M]</p>
-        </div>
-        <div>
-          <p class="text-sm text-gray-600">2025-07-11 23:00:00</p>
-          <button class="bg-green-700 text-white px-2 py-1 rounded mt-2">Presensi [R]</button>
-          <button class="bg-green-700 text-white px-2 py-1 rounded mt-2">Presensi [M]</button>
+      <!-- item 3 -->
+      <div class="bg-white p-3 rounded-lg shadow">
+        <div class="flex flex-col sm:flex-row justify-between">
+          <div class="mb-2 sm:mb-0">
+            <p class="text-lg font-bold">Minggu Ke - 3</p>
+            <p class="text-sm text-gray-600"><strong>自</strong> 11 Juli 2025 23:00:00 [R]</p>
+            <p class="text-sm text-gray-600">11 Juli 2025 23:00:00 [M]</p>
+          </div>
+          <div class="flex flex-col items-end">
+            <p class="text-xs sm:text-sm text-gray-600 mb-1">2025-07-11 23:00:00</p>
+            <div class="flex gap-1">
+              <button class="bg-green-700 text-white text-xs sm:text-sm px-2 py-1 rounded">Responsi [R]</button>
+              <button class="bg-green-700 text-white text-xs sm:text-sm px-2 py-1 rounded">Materi [M]</button>
+            </div>
+          </div>
         </div>
       </div>
+
 
       <!-- Item 4 -->
-      <div class="flex justify-between items-start mb-4 ">
-        <div>
-          <p class="text-lg font-bold">Minggu Ke - 4</p>
-          <p class="text-gray-600"><strong>自</strong> 11 Juli 2025 23:00:00 [R]</p>
-          <p class="text-gray-600">11 Juli 2025 23:00:00 [M]</p>
-        </div>
-        <div>
-          <p class="text-sm text-gray-600">2025-07-11 23:00:00</p>
-          <button class="bg-blue-500 text-white px-2 py-1 rounded mt-2">Presensi [R]</button>
-          <button class="bg-green-700 text-white px-2 py-1 rounded mt-2">Presensi [M]</button>
-        </div>
-      </div>
-
-      <!-- Item 5 -->
-      <div class="flex justify-between items-start mb-4">
-        <div>
-          <p class="text-lg font-bold">Minggu Ke - 5</p>
-          <p class="text-gray-600"><strong>自</strong> 11 Juli 2025 23:00:00 [R]</p>
-          <p class="text-gray-600">11 Juli 2025 23:00:00 [M]</p>
-        </div>
-        <div>
-          <p class="text-sm text-gray-600">2025-07-11 23:00:00</p>
-          <button class="bg-green-700 text-white px-2 py-1 rounded mt-2">Presensi [R]</button>
-          <button class="bg-green-700 text-white px-2 py-1 rounded mt-2">Presensi [M]</button>
+      <div class="bg-white p-3 rounded-lg shadow">
+        <div class="flex flex-col sm:flex-row justify-between">
+          <div class="mb-2 sm:mb-0">
+            <p class="text-lg font-bold">Minggu Ke - 4</p>
+            <p class="text-sm text-gray-600"><strong>自</strong> 11 Juli 2025 23:00:00 [R]</p>
+            <p class="text-sm text-gray-600">11 Juli 2025 23:00:00 [M]</p>
+          </div>
+          <div class="flex flex-col items-end">
+            <p class="text-xs sm:text-sm text-gray-600 mb-1">2025-07-11 23:00:00</p>
+            <div class="flex gap-1">
+              <button class="bg-blue-500 text-white text-xs sm:text-sm px-2 py-1 rounded">Responsi [R]</button>
+              <button class="bg-green-700 text-white text-xs sm:text-sm px-2 py-1 rounded">Materi [M]</button>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- Item 6 -->
-      <div class="flex justify-between items-start mb-4">
-        <div>
-          <p class="text-lg font-bold">Minggu Ke - 6</p>
-          <p class="text-gray-600"><strong>自</strong> 11 Juli 2025 23:00:00 [R]</p>
-          <p class="text-gray-600">11 Juli 2025 23:00:00 [M]</p>
-        </div>
-        <div>
-          <p class="text-sm text-gray-600">2025-07-11 23:00:00</p>
-          <button class="bg-green-700 text-white px-2 py-1 rounded mt-2">Presensi [R]</button>
-          <button class="bg-green-700 text-white px-2 py-1 rounded mt-2">Presensi [M]</button>
-        </div>
-      </div>
-
-      <!-- Item 7 -->
-      <div class="flex justify-between items-start mb-4 ">
-        <div>
-          <p class="text-lg font-bold">Minggu Ke - 7</p>
-          <p class="text-gray-600"><strong>自</strong> 11 Juli 2025 23:00:00 [R]</p>
-          <p class="text-gray-600">11 Juli 2025 23:00:00 [M]</p>
-        </div>
-        <div>
-          <p class="text-sm text-gray-600">2025-07-11 23:00:00</p>
-          <button class="bg-green-700 text-white px-2 py-1 rounded mt-2">Presensi [R]</button>
-          <button class="bg-green-700 text-white px-2 py-1 rounded mt-2">Presensi [M]</button>
+      <!-- item 5 -->
+      <div class="bg-white p-3 rounded-lg shadow">
+        <div class="flex flex-col sm:flex-row justify-between">
+          <div class="mb-2 sm:mb-0">
+            <p class="text-lg font-bold">Minggu Ke - 5</p>
+            <p class="text-sm text-gray-600"><strong>自</strong> 11 Juli 2025 23:00:00 [R]</p>
+            <p class="text-sm text-gray-600">11 Juli 2025 23:00:00 [M]</p>
+          </div>
+          <div class="flex flex-col items-end">
+            <p class="text-xs sm:text-sm text-gray-600 mb-1">2025-07-11 23:00:00</p>
+            <div class="flex gap-1">
+              <button class="bg-green-700 text-white text-xs sm:text-sm px-2 py-1 rounded">Responsi [R]</button>
+              <button class="bg-green-700 text-white text-xs sm:text-sm px-2 py-1 rounded">Materi [M]</button>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- Item 8 -->
-      <div class="flex justify-between items-start mb-4">
-        <div>
-          <p class="text-lg font-bold">Minggu Ke - 8</p>
-          <p class="text-gray-600"><strong>自</strong> 11 Juli 2025 23:00:00 [R]</p>
-          <p class="text-gray-600">11 Juli 2025 23:00:00 [M]</p>
-        </div>
-        <div>
-          <p class="text-sm text-gray-600">2025-07-11 23:00:00</p>
-          <button class="bg-green-700 text-white px-2 py-1 rounded mt-2">Presensi [R]</button>
-          <button class="bg-green-700 text-white px-2 py-1 rounded mt-2">Presensi [M]</button>
-        </div>
-      </div>
-
-      <!-- Item 9 -->
-      <div class="flex justify-between items-start mb-4">
-        <div>
-          <p class="text-lg font-bold">Minggu Ke - 9</p>
-          <p class="text-gray-600"><strong>自</strong> 11 Juli 2025 23:00:00 [R]</p>
-          <p class="text-gray-600">11 Juli 2025 23:00:00 [M]</p>
-        </div>
-        <div>
-          <p class="text-sm text-gray-600">2025-07-11 23:00:00</p>
-          <button class="bg-green-700 text-white px-2 py-1 rounded mt-2">Presensi [R]</button>
-          <button class="bg-green-700 text-white px-2 py-1 rounded mt-2">Presensi [M]</button>
+      <!-- item 6 -->
+      <div class="bg-white p-3 rounded-lg shadow">
+        <div class="flex flex-col sm:flex-row justify-between">
+          <div class="mb-2 sm:mb-0">
+            <p class="text-lg font-bold">Minggu Ke - 6</p>
+            <p class="text-sm text-gray-600"><strong>自</strong> 11 Juli 2025 23:00:00 [R]</p>
+            <p class="text-sm text-gray-600">11 Juli 2025 23:00:00 [M]</p>
+          </div>
+          <div class="flex flex-col items-end">
+            <p class="text-xs sm:text-sm text-gray-600 mb-1">2025-07-11 23:00:00</p>
+            <div class="flex gap-1">
+              <button class="bg-green-700 text-white text-xs sm:text-sm px-2 py-1 rounded">Responsi [R]</button>
+              <button class="bg-green-700 text-white text-xs sm:text-sm px-2 py-1 rounded">Materi [M]</button>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- Item 10 -->
-      <div class="flex justify-between items-start mb-4 ">
-        <div>
-          <p class="text-lg font-bold">Minggu Ke - 10</p>
-          <p class="text-gray-600"><strong>自</strong> 11 Juli 2025 23:00:00 [R]</p>
-          <p class="text-gray-600">11 Juli 2025 23:00:00 [M]</p>
-        </div>
-        <div>
-          <p class="text-sm text-gray-600">2025-07-11 23:00:00</p>
-          <button class="bg-green-700 text-white px-2 py-1 rounded mt-2">Presensi [R]</button>
-          <button class="bg-green-700 text-white px-2 py-1 rounded mt-2">Presensi [M]</button>
+      <!-- item 7 -->
+      <div class="bg-white p-3 rounded-lg shadow">
+        <div class="flex flex-col sm:flex-row justify-between">
+          <div class="mb-2 sm:mb-0">
+            <p class="text-lg font-bold">Minggu Ke - 7</p>
+            <p class="text-sm text-gray-600"><strong>自</strong> 11 Juli 2025 23:00:00 [R]</p>
+            <p class="text-sm text-gray-600">11 Juli 2025 23:00:00 [M]</p>
+          </div>
+          <div class="flex flex-col items-end">
+            <p class="text-xs sm:text-sm text-gray-600 mb-1">2025-07-11 23:00:00</p>
+            <div class="flex gap-1">
+              <button class="bg-green-700 text-white text-xs sm:text-sm px-2 py-1 rounded">Responsi [R]</button>
+              <button class="bg-green-700 text-white text-xs sm:text-sm px-2 py-1 rounded">Materi [M]</button>
+            </div>
+          </div>
         </div>
       </div>
+
+      <!-- item 8 -->
+      <div class="bg-white p-3 rounded-lg shadow">
+        <div class="flex flex-col sm:flex-row justify-between">
+          <div class="mb-2 sm:mb-0">
+            <p class="text-lg font-bold">Minggu Ke - 8</p>
+            <p class="text-sm text-gray-600"><strong>自</strong> 11 Juli 2025 23:00:00 [R]</p>
+            <p class="text-sm text-gray-600">11 Juli 2025 23:00:00 [M]</p>
+          </div>
+          <div class="flex flex-col items-end">
+            <p class="text-xs sm:text-sm text-gray-600 mb-1">2025-07-11 23:00:00</p>
+            <div class="flex gap-1">
+              <button class="bg-green-700 text-white text-xs sm:text-sm px-2 py-1 rounded">Responsi [R]</button>
+              <button class="bg-green-700 text-white text-xs sm:text-sm px-2 py-1 rounded">Materi [M]</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- item 9 -->
+      <div class="bg-white p-3 rounded-lg shadow">
+        <div class="flex flex-col sm:flex-row justify-between">
+          <div class="mb-2 sm:mb-0">
+            <p class="text-lg font-bold">Minggu Ke - 9</p>
+            <p class="text-sm text-gray-600"><strong>自</strong> 11 Juli 2025 23:00:00 [R]</p>
+            <p class="text-sm text-gray-600">11 Juli 2025 23:00:00 [M]</p>
+          </div>
+          <div class="flex flex-col items-end">
+            <p class="text-xs sm:text-sm text-gray-600 mb-1">2025-07-11 23:00:00</p>
+            <div class="flex gap-1">
+              <button class="bg-green-700 text-white text-xs sm:text-sm px-2 py-1 rounded">Responsi [R]</button>
+              <button class="bg-green-700 text-white text-xs sm:text-sm px-2 py-1 rounded">Materi [M]</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- item 10 -->
+      <div class="bg-white p-3 rounded-lg shadow">
+        <div class="flex flex-col sm:flex-row justify-between">
+          <div class="mb-2 sm:mb-0">
+            <p class="text-lg font-bold">Minggu Ke - 10</p>
+            <p class="text-sm text-gray-600"><strong>自</strong> 11 Juli 2025 23:00:00 [R]</p>
+            <p class="text-sm text-gray-600">11 Juli 2025 23:00:00 [M]</p>
+          </div>
+          <div class="flex flex-col items-end">
+            <p class="text-xs sm:text-sm text-gray-600 mb-1">2025-07-11 23:00:00</p>
+            <div class="flex gap-1">
+              <button class="bg-green-700 text-white text-xs sm:text-sm px-2 py-1 rounded">Responsi [R]</button>
+              <button class="bg-green-700 text-white text-xs sm:text-sm px-2 py-1 rounded">Materi [M]</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
 
       <!-- Item 11 -->
-      <div class="flex justify-between items-start mb-4">
-        <div>
-          <p class="text-lg font-bold">Minggu Ke - 11</p>
-          <p class="text-gray-600"><strong>自</strong> 11 Juli 2025 23:00:00 [R]</p>
-          <p class="text-gray-600">11 Juli 2025 23:00:00 [M]</p>
-        </div>
-        <div>
-          <p class="text-sm text-gray-600">2025-07-11 23:00:00</p>
-          <button class="bg-blue-500 text-white px-2 py-1 rounded mt-2">Presensi [R]</button>
-          <button class="bg-blue-500 text-white px-2 py-1 rounded mt-2">Presensi [M]</button>
+      <div class="bg-white p-3 rounded-lg shadow">
+        <div class="flex flex-col sm:flex-row justify-between">
+          <div class="mb-2 sm:mb-0">
+            <p class="text-lg font-bold">Minggu Ke - 11</p>
+            <p class="text-sm text-gray-600"><strong>自</strong> 11 Juli 2025 23:00:00 [R]</p>
+            <p class="text-sm text-gray-600">11 Juli 2025 23:00:00 [M]</p>
+          </div>
+          <div class="flex flex-col items-end">
+            <p class="text-xs sm:text-sm text-gray-600 mb-1">2025-07-11 23:00:00</p>
+            <div class="flex gap-1">
+              <button class="bg-blue-500 text-white text-xs sm:text-sm px-2 py-1 rounded">Responsi [R]</button>
+              <button class="bg-blue-500 text-white text-xs sm:text-sm px-2 py-1 rounded">Materi [M]</button>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- Item 12 -->
-      <div class="flex justify-between items-start mb-4">
-        <div>
-          <p class="text-lg font-bold">Minggu Ke - 12</p>
-          <p class="text-gray-600"><strong>自</strong> 11 Juli 2025 23:00:00 [R]</p>
-          <p class="text-gray-600">11 Juli 2025 23:00:00 [M]</p>
-        </div>
-        <div>
-          <p class="text-sm text-gray-600">2025-07-11 23:00:00</p>
-          <button class="bg-green-700 text-white px-2 py-1 rounded mt-2">Presensi [R]</button>
-          <button class="bg-green-700 text-white px-2 py-1 rounded mt-2">Presensi [M]</button>
+       <!-- Item 12 -->
+      <div class="bg-white p-3 rounded-lg shadow">
+        <div class="flex flex-col sm:flex-row justify-between">
+          <div class="mb-2 sm:mb-0">
+            <p class="text-lg font-bold">Minggu Ke - 12</p>
+            <p class="text-sm text-gray-600"><strong>自</strong> 11 Juli 2025 23:00:00 [R]</p>
+            <p class="text-sm text-gray-600">11 Juli 2025 23:00:00 [M]</p>
+          </div>
+          <div class="flex flex-col items-end">
+            <p class="text-xs sm:text-sm text-gray-600 mb-1">2025-07-11 23:00:00</p>
+            <div class="flex gap-1">
+              <button class="bg-blue-500 text-white text-xs sm:text-sm px-2 py-1 rounded">Responsi [R]</button>
+              <button class="bg-blue-500 text-white text-xs sm:text-sm px-2 py-1 rounded">Materi [M]</button>
+            </div>
+          </div>
         </div>
       </div>
 
       <!-- Item 13 -->
-      <div class="flex justify-between items-start mb-4">
-        <div>
-          <p class="text-lg font-bold">Minggu Ke - 13</p>
-          <p class="text-gray-600"><strong>自</strong></p>
-        </div>
-        <div>
-          <p class="text-sm text-gray-600">2025-06-04 20:58:42</p>
+      <div class="bg-white p-3 rounded-lg shadow">
+        <div class="flex flex-col sm:flex-row justify-between">
+          <div class="mb-2 sm:mb-0">
+            <p class="text-lg font-bold">Minggu Ke - 13</p>
+            <p class="text-sm text-gray-600"><strong>自</strong></p>
+          </div>
+          <div class="flex flex-col items-end">
+            <p class="text-xs sm:text-sm text-gray-600">2025-06-04 20:58:42</p>
+          </div>
         </div>
       </div>
 
       <!-- Item 14 -->
-      <div class="flex justify-between items-start mb-4">
-        <div>
-          <p class="text-lg font-bold">Minggu Ke - 14</p>
-          <p class="text-gray-600"><strong>自</strong></p>
-        </div>
-        <div>
-          <p class="text-sm text-gray-600">2025-06-04 20:58:42</p>
+      <div class="bg-white p-3 rounded-lg shadow">
+        <div class="flex flex-col sm:flex-row justify-between">
+          <div class="mb-2 sm:mb-0">
+            <p class="text-lg font-bold">Minggu Ke - 14</p>
+            <p class="text-sm text-gray-600"><strong>自</strong></p>
+          </div>
+          <div class="flex flex-col items-end">
+            <p class="text-xs sm:text-sm text-gray-600">2025-06-04 20:58:42</p>
+          </div>
         </div>
       </div>
 
       <!-- Item 15 -->
-      <div class="flex justify-between items-start mb-4">
-        <div>
-          <p class="text-lg font-bold">Minggu Ke - 15</p>
-          <p class="text-gray-600"><strong>自</strong></p>
-        </div>
-        <div>
-          <p class="text-sm text-gray-600">2025-06-04 20:58:42</p>
+      <div class="bg-white p-3 rounded-lg shadow">
+        <div class="flex flex-col sm:flex-row justify-between">
+          <div class="mb-2 sm:mb-0">
+            <p class="text-lg font-bold">Minggu Ke - 15</p>
+            <p class="text-sm text-gray-600"><strong>自</strong></p>
+          </div>
+          <div class="flex flex-col items-end">
+            <p class="text-xs sm:text-sm text-gray-600">2025-06-04 20:58:42</p>
+          </div>
         </div>
       </div>
 
       <!-- Item 16 -->
-      <div class="flex justify-between items-start mb-4">
-        <div>
-          <p class="text-lg font-bold">Minggu Ke - 16</p>
-          <p class="text-gray-600"><strong>自</strong></p>
-        </div>
-        <div>
-          <p class="text-sm text-gray-600">2025-06-04 20:58:42</p>
+      <div class="bg-white p-3 rounded-lg shadow">
+        <div class="flex flex-col sm:flex-row justify-between">
+          <div class="mb-2 sm:mb-0">
+            <p class="text-lg font-bold">Minggu Ke - 16</p>
+            <p class="text-sm text-gray-600"><strong>自</strong></p>
+          </div>
+          <div class="flex flex-col items-end">
+            <p class="text-xs sm:text-sm text-gray-600">2025-06-04 20:58:42</p>
+          </div>
         </div>
       </div>
+
+      <!-- Continue with other items following the same pattern -->
+      
     </div>
   </main>
 </body>
